@@ -1,0 +1,47 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* NAVBAR */
+nav {
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav img {
+    width: 40px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+nav li:hover {
+    text-decoration: underline;
+}
+
+/* Pages */
+.page {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

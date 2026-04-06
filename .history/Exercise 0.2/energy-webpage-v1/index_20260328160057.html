@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <img src="images/PowerIcon.png" id="logo" onclick="showPage('home')">
+
+        <ul>
+            <li onclick="showPage('home')">Home</li>
+            <li onclick="showPage('tv')">Televisions</li>
+            <li onclick="showPage('about')">About Us</li>
+        </ul>
+    </nav>
+
+    <!-- PAGES -->
+    <div id="home" class="page">
+        <h1>Home</h1>
+        <p>Welcome to the Energy Consumption Website</p>
+    </div>
+
+    <div id="tv" class="page" style="display:none;">
+        <h1>Televisions</h1>
+        <p>Energy usage of TVs in Australia</p>
+    </div>
+
+    <div id="about" class="page" style="display:none;">
+        <h1>About Us</h1>
+        <p>This website is created for COS30045.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>2026 | Your Name | AI assisted</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

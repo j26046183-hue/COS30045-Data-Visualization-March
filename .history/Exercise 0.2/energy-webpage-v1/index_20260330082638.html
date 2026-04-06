@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Consumption Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo" onclick="showPage('home')">
+            <img src="images/PowerIcon.png" alt="logo">
+            <span>Energy AU</span>
+        </div>
+
+        <ul>
+            <li id="nav-home" onclick="showPage('home')">Home</li>
+            <li id="nav-tv" onclick="showPage('tv')">Televisions</li>
+            <li id="nav-about" onclick="showPage('about')">About Us</li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <div id="home" class="page">
+        <h1>Energy Consumption in Australia</h1>
+        <p>
+            This website provides insights into appliance energy usage in the Australian market.
+            Understanding energy consumption helps households reduce electricity costs and environmental impact.
+        </p>
+    </div>
+
+    <!-- TV PAGE -->
+    <div id="tv" class="page">
+        <h1>Television Energy Usage</h1>
+        <p>
+            Modern televisions vary significantly in energy consumption depending on size and technology.
+            LED TVs are generally more energy-efficient compared to older plasma models.
+        </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="page">
+        <h1>About This Project</h1>
+        <p>
+            This website was developed for COS30045 Data Visualisation.
+            It demonstrates basic web development and GitHub workflow.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 | Kartikyogam | AI-assisted development using Chatgpt and GitHub Copilot</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

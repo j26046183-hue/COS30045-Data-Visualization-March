@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Consumption Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo" onclick="showPage('home')">
+            <img src="images/PowerIcon.png" alt="logo">
+            <span>Energy AU</span>
+        </div>
+
+        <ul>
+            <li id="nav-home" onclick="showPage('home')">Home</li>
+            <li id="nav-tv" onclick="showPage('tv')">Televisions</li>
+            <li id="nav-about" onclick="showPage('about')">About Us</li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <div id="home" class="page">
+        <h1>Energy Consumption in Australia</h1>
+        
+        <p>
+            Energy consumption in Australian households has increased significantly over the past decade due to the growing use of electrical appliances. Devices such as televisions, refrigerators, air conditioners, and washing machines contribute a large portion of total electricity usage.
+
+            In Australia, energy efficiency is an important factor when purchasing appliances, as it directly affects both electricity costs and environmental impact. Government initiatives such as energy rating labels help consumers make informed decisions when selecting appliances.
+
+            This website explores the energy usage of common household appliances, with a focus on televisions, to better understand their impact on energy consumption in the Australian market.
+        </p>
+    </div>
+
+    <!-- TV PAGE -->
+    <div id="tv" class="page">
+        <h1>Television Energy Usage</h1>
+
+        <p>
+            Televisions are one of the most commonly used appliances in Australian homes. The energy consumption of a television depends on several factors, including screen size, display technology, and usage time.
+
+            Modern LED televisions are generally more energy-efficient compared to older plasma and LCD models. Larger screen sizes tend to consume more electricity, especially when used for extended periods such as streaming or gaming.
+
+            In Australia, energy rating labels are used to indicate the efficiency of televisions, allowing consumers to compare different models. Choosing energy-efficient televisions can help reduce electricity bills and contribute to a more sustainable environment.
+        </p>
+        
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="page">
+        <h1>About This Project</h1>
+        <p>
+            This website was developed as part of the COS30045 Data Visualisation unit. It aims to provide insights into appliance energy consumption within the Australian market.
+
+            The project demonstrates the use of HTML, CSS, and JavaScript to create an interactive website, as well as the use of GitHub for version control and Mercury for web hosting.
+
+            The information presented serves as a foundation for future data visualisation tasks, where real datasets will be used to create interactive charts and analysis.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 | Kartikyogam | AI-assisted development using Chatgpt and GitHub Copilot</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
