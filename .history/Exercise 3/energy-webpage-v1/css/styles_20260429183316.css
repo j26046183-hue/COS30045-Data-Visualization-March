@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f7fb, #e9edf5);
+    background: linear-gradient(135deg, #f5f7fb, #e9eef6);
     color: var(--text);
     line-height: 1.6;
 }
 
-/* SMOOTH ANIMATION */
+/* smooth animation */
 * {
     transition: all 0.25s ease;
 }
@@ -20,11 +20,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(30, 39, 46, 0.95);
+
+    background: rgba(27, 36, 48, 0.95);
     backdrop-filter: blur(12px);
-    padding: 15px 40px;
+
+    padding: 14px 40px;
     color: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -61,28 +65,28 @@ nav li {
     padding: 8px 14px;
     cursor: pointer;
     border-radius: 20px;
-    color: white;
+    color: rgba(255,255,255,0.85);
     font-size: 14px;
     user-select: none;
 }
 
-/* hover (only when not active) */
+/* hover */
 nav li:hover {
-    background: #f1c40f;
-    color: #1e272e;
+    background: rgba(241, 196, 15, 0.18);
+    color: #fff;
     transform: translateY(-2px);
 }
 
-/* active tab */
+/* active */
 .active {
-    background: #f1c40f;
-    color: #111111;
+    background: var(--accent);
+    color: #1b2430;
     font-weight: 700;
     box-shadow: 0 6px 16px rgba(241, 196, 15, 0.35);
     border: 1px solid rgba(0,0,0,0.1);
 }
 
-/* PAGE LAYOUT */
+/* PAGE */
 .page {
     display: none;
     padding: 80px 20px;
@@ -91,12 +95,12 @@ nav li:hover {
     animation: fadeIn 0.4s ease;
 }
 
-/* default page */
+/* HOME default */
 #home {
     display: block;
 }
 
-/* FADE ANIMATION */
+/* ANIMATION */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -118,20 +122,23 @@ h1 {
     letter-spacing: -0.5px;
 }
 
-/* CARDS (paragraphs) */
+/* CARDS */
 p {
     background: var(--card);
     padding: 25px;
     border-radius: 16px;
+
     box-shadow: var(--shadow);
+
     max-width: 900px;
     margin: 20px auto;
+
     color: var(--muted);
     font-size: 15.5px;
     line-height: 1.7;
 }
 
-/* hover effect */
+/* hover */
 p:hover {
     transform: translateY(-3px);
 }
@@ -141,8 +148,9 @@ p:hover {
     display: block;
     width: 100%;
     max-width: 900px;
-    height: auto;
+
     margin: 25px auto;
+
     border-radius: 16px;
     box-shadow: var(--shadow);
 }
@@ -151,7 +159,7 @@ p:hover {
     transform: scale(1.01);
 }
 
-/* FOOTER */
+/* FOOTER (clean + thin modern style) */
 footer {
     background: #1e272e;
     color: rgba(220, 221, 225, 0.7);

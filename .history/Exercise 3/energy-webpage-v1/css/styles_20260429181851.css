@@ -68,18 +68,17 @@ nav li {
 
 /* hover (only when not active) */
 nav li:hover {
-    background: #f1c40f;
-    color: #1e272e;
+    background: rgba(241, 196, 15, 0.25); /* soft yellow glow */
+    color: #ffffff;
     transform: translateY(-2px);
 }
 
 /* active tab */
 .active {
-    background: #f1c40f;
-    color: #111111;
-    font-weight: 700;
-    box-shadow: 0 6px 16px rgba(241, 196, 15, 0.35);
-    border: 1px solid rgba(0,0,0,0.1);
+    background: var(--accent);
+    color: #1e272e;
+    font-weight: 600;
+    transform: none !important;
 }
 
 /* PAGE LAYOUT */
@@ -154,13 +153,11 @@ p:hover {
 /* FOOTER */
 footer {
     background: #1e272e;
-    color: rgba(220, 221, 225, 0.7);
-
+    color: #dcdde1;
     text-align: center;
-    font-size: 11px;
-
-    padding: 8px 0;
-    margin-top: 60px;
-
-    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 13px;
 }
